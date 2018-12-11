@@ -50,10 +50,16 @@ try:
 
 
     #MODO 3 DE CAPTURAR DADOS JÁ MOSTRANDO NA TELA
-    for row in sheet.iter_rows(min_row=1, min_col=1, max_row=6, max_col=3):
-        for cell in row:
-            print(cell.value, end=" ")
-        print()
+    #for row in sheet.iter_rows(min_row=1, min_col=1, max_row=6, max_col=3):
+    #    for cell in row:
+    #        print(cell.value, end=" ")
+    #    print()
+
+        
+    #MODO 4 DE CAPTURAR DADOS MOSTRANDO OS ROWS NA TELA        
+    for row in sheet.values:
+        print(row)
+
 
 
 except Exception as E:
