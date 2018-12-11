@@ -59,6 +59,10 @@ try:
     #MODO 4 DE CAPTURAR DADOS MOSTRANDO OS ROWS NA TELA        
     for row in sheet.values:
         print(row)
+        print(row[0])
+        print(row[1])
+        print(row[2])
+        print()
 
 
 
